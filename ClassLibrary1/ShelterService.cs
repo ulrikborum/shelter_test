@@ -78,10 +78,10 @@ public class ShelterService
             throw new ArgumentException("Id must be greater than 0.");
 
         if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentNullException("Name cannot be empty.");
+            throw new ArgumentException("Name cannot be empty.");
 
         if (string.IsNullOrWhiteSpace(place))
-            throw new ArgumentNullException("Place cannot be empty.");
+            throw new ArgumentException("Place cannot be empty.");
 
         if (maxCapacity < 0)
             throw new ArgumentException("MaxCapacity cannot be negative.");
